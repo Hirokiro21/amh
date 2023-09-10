@@ -74,7 +74,7 @@ if len(DATABASE_URL) == 0:
 
 if DATABASE_URL:
     conn = MongoClient(DATABASE_URL)
-    db = conn.atri
+    db = conn.atrihrk
     current_config = dict(dotenv_values('config.env'))
     old_config = db.settings.deployConfig.find_one({'_id': bot_id})
     if old_config is None:
