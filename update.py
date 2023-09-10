@@ -52,7 +52,7 @@ if DATABASE_URL:
 
 UPSTREAM_REPO = environ.get('UPSTREAM_REPO', '')
 if len(UPSTREAM_REPO) == 0:
-    UPSTREAM_REPO = 'https://Hirokiro21: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@github.com/Atrocious_Mirror-Heroku'
+    UPSTREAM_REPO = 'https://github.com/Hirokiro21/Atrocious_Mirror-Heroku'
 
 UPSTREAM_BRANCH = environ.get('UPSTREAM_BRANCH', '')
 if len(UPSTREAM_BRANCH) == 0:
