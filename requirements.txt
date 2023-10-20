@@ -5,8 +5,6 @@ anytree==2.8.0
 apscheduler
 aria2p
 asyncio
-beautifulsoup4
-cinemagoer
 cloudscraper
 dnspython
 feedparser
@@ -21,14 +19,12 @@ httpx
 lxml
 motor
 mutagen
-markdown
 natsort
 pillow
 psutil
 pybase64
-pycountry
 pymongo
-pyrogram==2.0.77
+pyrogram==2.0.66
 python-dotenv
 python-magic
 qbittorrent-api
