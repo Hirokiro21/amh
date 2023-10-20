@@ -416,6 +416,10 @@ TORRENT_ENABLED = TORRENT_ENABLED.lower() == 'true'
 TORRENT_LIMIT = environ.get('TORRENT_LIMIT', '')
 TORRENT_LIMIT = '' if len(TORRENT_LIMIT) == 0 else float(TORRENT_LIMIT)
 
+THEME_ENABLED = environ.get('THEME_ENABLED', '')
+if len(THEME_ENABLED) == 0:
+    THEME_ENABLED = ''
+
 USER_MAX_TASKS = environ.get('USER_MAX_TASKS', '')
 USER_MAX_TASKS = int(USER_MAX_TASKS) if USER_MAX_TASKS.isdigit() else ''
 
@@ -491,6 +495,7 @@ config_dict = {'AS_DOCUMENT': AS_DOCUMENT,
                'SUDO_USERS': SUDO_USERS,
                'TELEGRAM_API': TELEGRAM_API,
                'TELEGRAM_HASH': TELEGRAM_HASH,
+               'THEME_ENABLED': THEME_ENABLED,
                'TOKEN_TIMEOUT': TOKEN_TIMEOUT,
                'TORRENT_ENABLED': TORRENT_ENABLED,
                'TORRENT_LIMIT': TORRENT_LIMIT,
